@@ -94,6 +94,13 @@
                 <!-- Portfolio item 02 -->
                 <a href="portfolio-item.html" class="portfolio__item">
                     <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                    <button onclick="runPythonScript()">Play Pong</button> 
+                    <script>
+                        function runPythonScript(){
+                            var pythonScriptPath = "projects/pong.py";
+                            subprocess.run(["python", pythonScriptPath]);
+                        }
+                    </script>
                 </a>
                 
                 <!-- Portfolio item 03 -->
