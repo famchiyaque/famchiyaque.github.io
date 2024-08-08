@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/btns.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <title>Welcome!</title>
+</head>
+
+<body>
+    <header class="banner-famchi">
+        <div class="left-banner">
+            <a>Start</a>
+        </div>
+        <div class="right-banner">
+            <a href="./views/aboutMe.html">About Me  </a><p>  |  </p>
+            <a href="./views/portfolio.html">Portfolio  </a><p>  |  </p>
+            <a onclick="openSettings()"><i class="bi bi-gear"></i></a>
+        </div>
+    </header>
+
+    <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div> -->
+
+    <div class="profile">
+        <img src="./images/profile-pic.jpg">
+        <div class="profile-info">
+            <div class="profile-name"><p>Andre Zaldivar Agle</p></div>
+            <div class="profile-subtitle"><p>Software Engineer | Student | Web Developer</p></div>
+            <div class="profile-desc"><p>I'm on a journey to learn as much as possible about computers and 
+                programming hopefully one day make a positive impact on this world.</p></div>
+        </div>
+    </div>
+
+    <div class="links">
+        <button class="exp-btn" onclick="location.href='./views/aboutMe.html#contacts'">
+            Contact Me
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path
+                clip-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <button class="exp-btn"  onclick="location.href='./views/portfolio.html'">
+            My Experience
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path
+                clip-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <button class="exp-btn"  onclick="location.href='./views/portfolio.html'">
+            My Resume
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path
+                clip-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+    </div>
+
+    <footer class="footer">
+      <a href="mailto:examplemail@gmail.com" class="footer__link">andrezala03@gmail.com</a>
+      <ul class="social-list">
+          <li class="social-list__item">
+              <a class="social-list__link" href="https://linkedin.com">
+                <i class="bi bi-linkedin"></i>
+              </a>
+          </li>
+          <li class="social-list__item">
+              <a class="social-list__link" href="https://github.com/famchiyaque">
+                <i class="bi bi-github"></i>
+              </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://wa.me/12156662373" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </li>
+      </ul>
+    </footer>
+
+</body>
+<script src="./scripts/main.js"></script>
+</html>

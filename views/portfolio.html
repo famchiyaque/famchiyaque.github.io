@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    <title>My Work</title>
+</head>
+
+<body>
+    <header class="banner-famchi" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <div class="left-banner">
+            <a href="../index.html">Start</a>
+        </div>
+        <div class="right-banner">
+            <a href="./aboutMe.html">About Me  </a><p>  |  </p>
+            <a href="./portfolio.html">Portfolio  </a><p>  |  </p>
+            <a><i class="bi bi-gear"></i></a>
+        </div>
+    </header>
+
+    <h2 class="gray-underline">My Work</h2>
+
+    <a href="../index.html"><img src="../images/profile-pic.jpg" class="perm"></a>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="toggleWork('school')" id="school-tab">School Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="toggleWork('programming')" id="prog-tab">Programming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="toggleWork('personal')" id="pers-tab">Personal Projects</a>
+        </li>
+    </ul>
+
+    <section class="work-zone">
+        <div class="school" id="school">
+            <div class="skills thirds">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Project Name</h5></li>
+                    <li class="list-group-item">
+                        <h6>Appix Risk Manager</h6>
+                        <p>This was a secure website whose purpose was to log projects and monitor 
+                            their states of risk over time to allow the users to make informed decisions
+                            on which projects to continue and which not to.
+                        </p>
+                        <ul><li>NodeJS</li><li>Frontend</li><li>Relational Databases</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>NOVUS Educational Simulator</h6>
+                        <p>It is an online simulator designed for commercial use where students learn 
+                            can play with and learn the financial, logistical, and qualitative 
+                            complexities of production lines.
+                        </p>
+                        <ul><li>Financial Modeling</li><li>Javascript</li><li>Non-relational Databases</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-role thirds">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>My Role</h5></li>
+                    <li class="list-group-item">
+                        <h6>Web Developer</h6>
+                        <p>Since we were only a team of 2, we both had to contribute to all aspects of the project. We 
+                            built the database, coded the backend, and designed the frontend together. 
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Developer/Programmer</h6>
+                        <p>I am currently assigned to the financial modeling team where our job is to create and code 
+                            the part of the simulation that handles the costs and profits of the user's business model.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects thirds">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Project Source</h5></li>
+                    <li class="list-group-item">
+                        <h6>Github Repository</h6>
+                        <img src="../images/manual_buscar.png">
+                        <a href="https://github.com/famchiyaque/Risk-Manager-App">github.com/famchiyaque/Risk-Manager-App</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Simulation is not yet public</h6>
+                        <img src="../images/novus-logo.png"><br>
+                        <img src="../images/novus.png" style="width: 45%;">
+                        <!-- <a href=""></a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="programming hidden" id="programming">
+            <div class="skills halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Activity Description</h5></li>
+                    <li class="list-group-item">
+                        <h6>ICPC Competitor</h6>
+                        <p>As part of a extracurricular group, I participate and represent my school on an 
+                            international stage in ICPC (International Collegiate Programming Contest) 
+                            in which we compete for a national 
+                            spot. We have not had much success so far, but we're getting there.
+                        </p>
+                        <ul><li>C++</li><li>Competitive Programming</li><li>Algorithms</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Code Wars User</h6>
+                        <p>I like to practice my programming and algorithms with CodeWars, a site similar to 
+                            Leetcode. I am relatively new but have already solved dozens of problems across 
+                            several algorithm/data structure types.
+                        </p>
+                        <ul><li>C++</li><li>Code Optimization</li><li>Time Complexities</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Link to Learn More</h5></li>
+                    <li class="list-group-item">
+                        <h6>There is no link for this one </h6>
+                        <img src="../images/icpc.jpg">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Link to my CodeWars Profile</h6>
+                        <img src="https://www.codewars.com/users/famchiyaque/badges/large"><br>
+                        <a href="https://www.codewars.com/users/famchiyaque">my codewars profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="personal hidden" id="personal">
+            <div class="skills halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Project Description</h5></li>
+                    <li class="list-group-item">
+                        <h6>React To Do App</h6>
+                        <p>This app combines the frontend capabilites of react with a nodejs/express 
+                            backend and mysql database to create a user-friendly experience to create 
+                            customized lists and keep track of their tasks with a MySQL database.
+                        </p>
+                        <ul><li>NodeJS/Express</li><li>React</li><li>MySQL</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Travel Advisor React App</h6>
+                        <p>This simple react app uses your location and APIs from both google and RapidAPI
+                            to produce a map that shows you the locations of the best restaurants near you
+                            including images and descriptions of each place.
+                        </p>
+                        <ul><li>React</li><li>APIs</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>BlackJack Simulator</h6>
+                        <p>This github repo contains various python scripts that simulate and/or graph the 
+                            results of many blackjack hands according to basic strategy. There's also a few
+                            to simulate playing a learn basic strategy.
+                        </p>
+                        <ul><li>Python</li><li>Statistics</li><li>Algorithms</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Link to Learn More</h5></li>
+                    <li class="list-group-item">
+                        <h6>Github Repository</h6>
+                        <img src="../images/mern-app.png"><br>
+                        <a href="https://github.com/famchiyaque/MERN-Todo-List-App">github.com/famchiyaque/MERN-Todo-List-App</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Github Repository</h6>
+                        <img src="../images/travel-advisor.png"><br>
+                        <a href="https://github.com/famchiyaque/Travel-Advisor-React-App">github.com/famchiyaque/Travel-Advisor-React-App</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Github Repository</h6>
+                        <img src="../images/blackjack.png"><br>
+                        <a href="https://github.com/famchiyaque/BlackJack-Sims">github.com/famchiyaque/BlackJack-Sims</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="hard-skills">
+        <h2 class="brown-underline">List of My Hard Skills</h2>
+        <div class="basic-flex" style="width: 80%; margin: 0 auto;">
+            <div>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>Backend</li>
+                    <li>Web Development</li>
+                    <li>Full Stack (MERN)</li>
+                    <li>React Apps with APIs</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>C++ </li>
+                    <li>Algorithms and Data Structures</li>
+                    <li>Python</li>
+                    <li>Statistics</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="this-site">
+        <h2 class="gray-underline">My Experience Making my Personal Website</h2>
+        <p>I had a lot of fun making this static website from scratch and having the opportunity to 
+            talk about myself and showcase my projects and experience to future employers and/or collegues.<br><br>
+            I hope whoever is reading this enjoyed the simplistis design of this site and thank you for 
+            checking me out! <br><br>
+            The code of this site was entirely mine except for various elements and components taken from 
+            bootstrap.
+        </p>
+    </section>
+
+    <div class="brown-lines">
+        <p class="brown-back">.</p><br><br><p class="brown-back">.</p>
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:examplemail@gmail.com" class="footer__link">andrezala03@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/famchiyaque">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.whatsapp.com">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+      </footer>
+
+</body>
+<script src="../scripts/portfolio.js"></script>
+<script src="../scripts/main.js"></script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/btns.css">
+    <link rel="stylesheet" href="../styles/aboutme.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <header class="banner-famchi" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <div class="left-banner">
+            <a href="../index.html">Start</a>
+        </div>
+        <div class="right-banner">
+            <a href="./aboutMe.html">About Me  </a><p>  |  </p>
+            <a href="./portfolio.html">Portfolio  </a><p>  |  </p>
+            <a><i class="bi bi-gear"></i></a>
+        </div>
+    </header>
+
+    <div class="three-lines-div">
+        <div id="three-lines" onclick="index()">Index  <i class="bi bi-arrow-bar-right"></i></div>
+    </div>
+
+    <div class="sidenav hidden">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#about-me">About Me</a></li>
+            <li class="list-group-item"><a href="#interests">My Interests</a></li>
+            <li class="list-group-item"><a href="#contacts">Contacts</a></li>
+        </ul>
+    </div>
+
+    <section class="about-me" id="about-me">
+        <h2>About Me</h2>
+        <div style="width: 100%; padding: 0 3rem;">
+            <img src="../images/profile-pic.jpg">
+            <p>I have lived in different places and am not afraid to move, since I have several times in my life. 
+                I was born in Chicago, ILL, then 
+                moved to Philadelphia, PA, when I was 8, and then moved to Queretaro, Mexico by myself
+                at age 17 to study computer science. 
+                I love beneffiting from having family roots in both countries and getting to speak and learn the 
+                language, culture, foods, and more from both as it broadens my perspective and enriches my 
+                character.
+                I hope to one day own my own business or non profit in which I can apply my engineering skills 
+                and help other people at the same time.
+            </p>
+        </div>
+    </section>
+
+    <section class="interests" id="interests">
+        <h2>My Interests</h2>
+        <ul class="nav nav-underline" style="justify-content: center;">
+            <li class="nav-item">
+              <a class="nav-link bold active" onclick="toggleInterests('sports')">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bold" onclick="toggleInterests('lit')">Literature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bold" onclick="toggleInterests('cook')">Cooking</a>
+            </li>
+          </ul>
+
+        <div class="sports" id="int-sport">
+            <p style="width: 60%; float: left;">Sports have always been a favorite hobby of mine, as over the course of my life 
+                I have played tennis, soccer, basketball, baseball, football, golf, ping pong, 
+                skateboarding, pickleball, and more. I am also an avid fan of the NBA and NFL, 
+                where I have always been a Chicago Bears/Bulls fan, to my own chigrin.
+            </p>
+            <img src="../images/kyrie.jpg">
+        </div>
+        <div class="hidden" id="int-lit">
+            <div class="literature">
+                <img src="../images/3-musk.jpg">
+                <p>I love classic literature and sci-fi books, my current favorite book is 
+                "The 3 Musketeers" by Alexandre Dumas.
+                </p>
+                <img src="../images/ready-player-one.webp">
+            </div>
+        </div>
+        <div class="cooking hidden" id="int-cook">
+            <img>
+            <p>I have traveled to many countries around the world and therefore have tried 
+                many varieties of food, of which my favorite is easily Asian fusion cuisine
+                including sushi, beef bulgogi, and fried rice dishes.
+            </p>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <h2>My Contacts</h2>
+        <p style="color: darkslategray;">The best way to reach me is my whatsapp, but my email is fine too.</p>
+        <div class="contacts-flex">
+            <ul class="list-group contacts-list">
+                <li class="list-group-item"><i class="bi bi-whatsapp"></i></li>
+                <li class="list-group-item"><i class="bi bi-envelope-open-fill"></i></li>
+                <li class="list-group-item"><i class="bi bi-github"></i></li>
+                <li class="list-group-item"><i class="bi bi-linkedin"></i></li>
+            </ul>
+            <ul class="list-group contacts-list">
+                <li class="list-group-item"><p>Number: +1 215 666 2373</p></li>
+                <li class="list-group-item"><p>Email: andrezala03@gmail.com</p></li>
+                <li class="list-group-item"><p>Github: famchiyaque</p></li>
+                <li class="list-group-item"><p>Linked In: to be continued</p></li>
+              </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="mailto:andrezala03@gmail.com" class="footer__link">andrezala03@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/famchiyaque">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.whatsapp.com">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+      </footer>
+
+</body>
+<script src="../scripts/about.js"></script>
+<script src="../scripts/main.js"></script>
+</html>
