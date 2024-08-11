@@ -130,7 +130,7 @@ img {
 .profile {
     width: 85%;
     height: 40vh;
-    margin: 3rem auto;
+    margin: 6rem auto 2rem auto;
     font-size: smaller;
     /* text-align: end; */
     position: relative;
@@ -151,6 +151,7 @@ img {
 
 .profile img {
     border-radius: 0 50% 50% 0;
+    border: solid black 2px;
     height: 100%;
     float: left;
     position: relative;
@@ -255,4 +256,77 @@ img {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.settings.show {
+    opacity: 1;
+    display: block;
+}
+
+.settings {
+    /* width: 10vw; */
+    /* height: 10vh; */
+    padding: 10px;
+    border: solid darkslategray 1px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    opacity: 0;
+    display: none;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toast { 
+    width: 25vw;
+    height: 13vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: solid var(--clr-accent) 1px;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    top: 500px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.toast-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    /* color: var(--clr-accent); */
+    color: darkslategray;
+    border-bottom: solid var(--clr-accent) 1px;
+    /* padding: 5px 10px; */
+}
+
+.toast-body {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.bi-person-square {
+    margin: 0 5px;
+}
+
+.close-btn {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    border-color: var(--clr-accent);
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
 }

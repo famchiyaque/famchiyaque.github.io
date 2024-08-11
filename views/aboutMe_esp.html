@@ -14,89 +14,88 @@
 <body>
     <header class="banner-famchi" style="font-family: Georgia, 'Times New Roman', Times, serif;">
         <div class="left-banner">
-            <a href="../index.html">Start</a>
+            <a href="../index.html">Inicio</a>
         </div>
         <div class="right-banner">
-            <a href="./aboutMe.html">About Me  </a><p>  |  </p>
-            <a href="./portfolio.html">Portfolio  </a><p>  |  </p>
+            <a href="./aboutMe.html">Acerca de Mi  </a><p>  |  </p>
+            <a href="./portfolio.html">Portafolio  </a><p>  |  </p>
             <a><i class="bi bi-gear"></i></a>
         </div>
     </header>
 
     <div class="three-lines-div">
-        <div id="three-lines" onclick="index()">Index  <i class="bi bi-arrow-bar-right"></i></div>
+        <div id="three-lines" onclick="index()">Índice  <i class="bi bi-arrow-bar-right"></i></div>
     </div>
 
     <div class="sidenav hidden">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="#about-me">About Me</a></li>
-            <li class="list-group-item"><a href="#interests">My Interests</a></li>
-            <li class="list-group-item"><a href="#contacts">Contacts</a></li>
+            <li class="list-group-item"><a href="#about-me">Acerca de Mi</a></li>
+            <li class="list-group-item"><a href="#interests">Mis Intereses</a></li>
+            <li class="list-group-item"><a href="#contacts">Contáctame</a></li>
         </ul>
     </div>
 
     <section class="about-me" id="about-me">
-        <h2>About Me</h2>
+        <h2>Acerca de Mi</h2>
         <div style="width: 100%; padding: 0 3rem;">
             <img src="../images/profile-pic.jpg">
-            <p>I have lived in different places and am not afraid to move, since I have several times in my life. 
-                I was born in Chicago, ILL, then 
-                moved to Philadelphia, PA, when I was 8, and then moved to Queretaro, Mexico by myself
-                at age 17 to study computer science. 
-                I love benefiting from having family roots in both countries and getting to speak and learn the 
-                language, culture, foods, and more from both as it broadens my perspective and enriches my 
-                character.
-                I hope to one day own my own business or non profit in which I can apply my engineering skills 
-                and help other people at the same time.
+            <p>
+                He vivido en varios lugares y no me da miedo mudarme y conocer lo nuevo, como he hecho varias veces.
+                Nací en Chicago, Illinois, luego nos mudamos a Philadelphia cuando tenía 8 años. A los 17 vine solo  
+                acá a Querétaro, México a estudiar ingeniería en tecnologías computacionales en el Tec de Monterrey.
+                Me beneficio de tener raíces en ambos paises y hablo español y inglés con fluidez, y me encanta conocer 
+                la cultura, comida, idiomas, y más porque me desarrolla mi perspectiva y carácter. Espero algún día 
+                emprender mi propio negocio donde pueda aplicar mis habilidades en ingeniería para ayudar a los demás.
             </p>
         </div>
     </section>
 
     <section class="interests" id="interests">
-        <h2>My Interests</h2>
+        <h2>Mis Intereses</h2>
         <ul class="nav nav-underline" style="justify-content: center;">
             <li class="nav-item">
-              <a class="nav-link bold active" onclick="toggleInterests('sports')">Sports</a>
+              <a class="nav-link bold active" onclick="toggleInterests('sports')">Deportes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link bold" onclick="toggleInterests('lit')">Literature</a>
+              <a class="nav-link bold" onclick="toggleInterests('lit')">Literatura</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link bold" onclick="toggleInterests('cook')">Cooking</a>
+              <a class="nav-link bold" onclick="toggleInterests('cook')">Comida</a>
             </li>
           </ul>
 
         <div class="sports" id="int-sport">
-            <p style="width: 60%; float: left;">Sports have always been a favorite hobby of mine, as over the course of my life 
-                I have played tennis, soccer, basketball, baseball, football, golf, ping pong, 
-                skateboarding, pickleball, and more. I am also an avid fan of the NBA and NFL, 
-                where I have always been a Chicago Bears/Bulls fan, to my own chigrin.
-                Kyre Irving (to the right) is my favorite NBA player because he's relatively short like me lol
-                but despite that is one of the best players consistently through hard work.
-            </p>
+            <p style>
+                Los deportes siempre han sido de mis hobbis favoritos, como a lo largo de mi vida 
+                he jugado tenis, futból, básquet, beísebol, americano, golf, ping pong, he patinado,
+                pickleball, y más. También soy un fan leal de la NBA y NFL, donde soporto mi cuidad de 
+                nacimiento, Chicago, a los Bulls y a los Bears, aunque me duele jejeje.
+                Kyrie Irving (a la izquierda) es my jugador favorita de la NBA porque es muy chaparro 
+                como yo y aún así ha sido un jugador elite durante años.
+            </p> 
             <img src="../images/kyrie.jpg">
         </div>
         <div class="hidden" id="int-lit">
             <div class="literature">
                 <img src="../images/3-musk.jpg">
-                <p>I love classic literature and sci-fi books, my current favorite book is 
-                "The 3 Musketeers" by Alexandre Dumas.
+                <p>Me gusta la literatura clásica y de ciencia ficción, mi libro actual favorito 
+                    es "Los 3 Mosqueteros" por Alexandre Dumas.
                 </p>
                 <img src="../images/ready-player-one.webp">
             </div>
         </div>
         <div class="cooking hidden" id="int-cook">
             <img>
-            <p>I have traveled to many countries around the world and therefore have tried 
-                many varieties of food, of which my favorite is easily Asian fusion cuisine
-                including sushi, beef bulgogi, and fried rice dishes.
+            <p>He viajado a muchos paises en mi vida en 4 continentes y por lo tanto probé 
+                una diversidad de comida, de la cual mi favorita es la oriental/fusión que 
+                incluye el sushi, res de bulgogi, y el arroz frito.
             </p>
         </div>
     </section>
 
     <section class="contacts" id="contacts">
         <h2>My Contacts</h2>
-        <p style="color: darkslategray;">The best way to reach me is my whatsapp, but my email is fine too.</p>
+        <p style="color: darkslategray;">La mejor manera de contactarme es por Whatsapp, pero por correo también está bien.</p>
         <div class="contacts-flex">
             <ul class="list-group contacts-list">
                 <li class="list-group-item"><i class="bi bi-whatsapp"></i></li>
@@ -105,8 +104,8 @@
                 <li class="list-group-item"><i class="bi bi-linkedin"></i></li>
             </ul>
             <ul class="list-group contacts-list">
-                <li class="list-group-item"><p>Number: +1 215 666 2373</p></li>
-                <li class="list-group-item"><p>Email: andrezala03@gmail.com</p></li>
+                <li class="list-group-item"><p>Número: +1 215 666 2373</p></li>
+                <li class="list-group-item"><p>Correo: andrezala03@gmail.com</p></li>
                 <li class="list-group-item"><p>Github: famchiyaque</p></li>
                 <li class="list-group-item"><p>LinkedIn: to be continued</p></li>
               </ul>

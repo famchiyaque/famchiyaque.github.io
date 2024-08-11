@@ -8,7 +8,9 @@ body {
     /* background-position: center center; */
 }
 
-
+.high-z {
+    z-index: 9999;
+}
 
 a .perm {
     position: fixed;
@@ -111,7 +113,7 @@ li p {
 
 .list-group-item {
     height: 200px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 /* .skills li, .projects li {
