@@ -49,23 +49,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
 })
 
-function changeLang(lang) {
-    console.log("in here")
-    const engDiv = document.querySelector('.english')
-    const spaDiv = document.querySelector('.spanish')
-    if (lang == 'eng' && engDiv.classList.contains('hidden')) {
-        spaDiv.classList.add('hidden')
-        engDiv.classList.remove('hidden')
-    } else if (lang == 'spa' && spaDiv.classList.contains('hidden')) {
-        engDiv.classList.add('hidden')
-        spaDiv.classList.remove('hidden')
+function changeToEng(page) {
+    if (page == 'index') {
+        window.location.href = './index.html'
+    } else if (page == 'about') {
+        window.location.href = './aboutMe.html'
+    } else if (page == 'portfolio') {
+        window.location.href = './portfolio.html'
     }
 }
 
-function changeToEng() {
-    window.location.href = './index.html'
-}
-
-function changeToSpa() {
-    window.location.href = './index_esp.html'
+function changeToSpa(page) {
+    if (page == 'index') {
+        window.location.href = './index_esp.html'
+    } else if (page == 'about') {
+        window.location.href = './aboutMe_esp.html'
+    } else if (page == 'portfolio') {
+        window.location.href = './portfolio_esp.html'
+    }
 }

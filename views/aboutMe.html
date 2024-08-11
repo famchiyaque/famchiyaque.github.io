@@ -8,6 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/btns.css">
     <link rel="stylesheet" href="../styles/aboutme.css">
+    <link rel="stylesheet" href="../styles/btns.css">
     <title>About Me</title>
 </head>
 
@@ -19,7 +20,7 @@
         <div class="right-banner">
             <a href="./aboutMe.html">About Me  </a><p>  |  </p>
             <a href="./portfolio.html">Portfolio  </a><p>  |  </p>
-            <a><i class="bi bi-gear"></i></a>
+            <a onclick="openSettings()" id="gear"><i class="bi bi-gear"></i></a>
         </div>
     </header>
 
@@ -133,6 +134,12 @@
             </li>
         </ul>
       </footer>
+
+      <div class="settings">
+        <div class="basic-flex">
+          <button class="button" onclick="changeToEng('about')">ENG</button> | <button class="button" onclick="changeToSpa('about')">SPA</button>
+        </div>
+      </div>
 
 </body>
 <script src="../scripts/about.js"></script>

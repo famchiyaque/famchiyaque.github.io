@@ -8,18 +8,19 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/btns.css">
     <link rel="stylesheet" href="../styles/aboutme.css">
-    <title>About Me</title>
+    <link rel="stylesheet" href="../styles/btns.css">
+    <title>¡Conóceme!</title>
 </head>
 
 <body>
     <header class="banner-famchi" style="font-family: Georgia, 'Times New Roman', Times, serif;">
         <div class="left-banner">
-            <a href="../index.html">Inicio</a>
+            <a href="../index_esp.html">Inicio</a>
         </div>
         <div class="right-banner">
-            <a href="./aboutMe.html">Acerca de Mi  </a><p>  |  </p>
-            <a href="./portfolio.html">Portafolio  </a><p>  |  </p>
-            <a><i class="bi bi-gear"></i></a>
+            <a href="./aboutMe_esp.html">Acerca de Mi  </a><p>  |  </p>
+            <a href="./portfolio_esp.html">Portafolio  </a><p>  |  </p>
+            <a onclick="openSettings()" id="gear"><i class="bi bi-gear"></i></a>
         </div>
     </header>
 
@@ -65,7 +66,7 @@
           </ul>
 
         <div class="sports" id="int-sport">
-            <p style>
+            <p style="width: 60%; float: left;">
                 Los deportes siempre han sido de mis hobbis favoritos, como a lo largo de mi vida 
                 he jugado tenis, futból, básquet, beísebol, americano, golf, ping pong, he patinado,
                 pickleball, y más. También soy un fan leal de la NBA y NFL, donde soporto mi cuidad de 
@@ -132,6 +133,12 @@
             </li>
         </ul>
       </footer>
+
+      <div class="settings">
+        <div class="basic-flex">
+          <button class="button" onclick="changeToEng('about')">ENG</button> | <button class="button" onclick="changeToSpa('about')">SPA</button>
+        </div>
+      </div>
 
 </body>
 <script src="../scripts/about.js"></script>

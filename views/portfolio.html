@@ -7,6 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/portfolio.css">
+    <link rel="stylesheet" href="../styles/btns.css">
     <title>My Work</title>
 </head>
 
@@ -18,7 +19,7 @@
         <div class="right-banner">
             <a href="./aboutMe.html">About Me  </a><p>  |  </p>
             <a href="./portfolio.html">Portfolio  </a><p>  |  </p>
-            <a><i class="bi bi-gear"></i></a>
+            <a onclick="openSettings()" id="gear"><i class="bi bi-gear"></i></a>
         </div>
     </header>
 
@@ -150,8 +151,8 @@
                     <li class="list-group-item">
                         <h6>Travel Advisor React App</h6>
                         <p>This simple react app uses your location and APIs from both google and RapidAPI
-                            to produce a map that shows you the locations of the best restaurants near you
-                            including images and descriptions of each place.
+                            to produce an interactive map that shows you the locations of the best restaurants 
+                            near you including images and descriptions of each place.
                         </p>
                         <ul><li>React</li><li>APIs</li></ul>
                     </li>
@@ -161,7 +162,7 @@
                             results of many blackjack hands according to basic strategy. There's also a few
                             to simulate playing a learn basic strategy.
                         </p>
-                        <ul><li>Python</li><li>Statistics</li><li>Algorithms</li></ul>
+                        <ul><li>Python</li><li>Statistics</li><li>Algorithms/Data Structures</li></ul>
                     </li>
                 </ul>
             </div>
@@ -219,7 +220,7 @@
             I hope whoever is reading this enjoyed the simplistis design of this site and thank you for 
             checking me out! <br><br>
             The code of this site was entirely mine except for various elements and components taken from 
-            bootstrap.
+            bootstrap. <a href="https://getbootstrap.com">bootstrap link</a>
         </p>
     </section>
 
@@ -247,6 +248,12 @@
             </li>
         </ul>
       </footer>
+
+      <div class="settings">
+        <div class="basic-flex">
+          <button class="button" onclick="changeToEng('portfolio')">ENG</button> | <button class="button" onclick="changeToSpa('portfolio')">SPA</button>
+        </div>
+      </div>
 
 </body>
 <script src="../scripts/portfolio.js"></script>

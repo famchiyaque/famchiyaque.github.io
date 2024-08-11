@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    <link rel="stylesheet" href="../styles/btns.css">
+    <title>My Work</title>
+</head>
+
+<body>
+    <header class="banner-famchi" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <div class="left-banner">
+            <a href="../index_esp.html">Inicio</a>
+        </div>
+        <div class="right-banner">
+            <a href="./aboutMe_esp.html">Acerca de Mi  </a><p>  |  </p>
+            <a href="./portfolio_esp.html">Portafolio  </a><p>  |  </p>
+            <a onclick="openSettings()" id="gear"><i class="bi bi-gear"></i></a>
+        </div>
+    </header>
+
+    <h2 class="gray-underline">Mi Trabajo</h2>
+
+    <a href="../index.html"><img src="../images/profile-pic.jpg" class="perm"></a>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="toggleWork('school')" id="school-tab">Proyectos de Escuela</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="toggleWork('programming')" id="prog-tab">Programación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="toggleWork('personal')" id="pers-tab">Proyectos Personales</a>
+        </li>
+    </ul>
+
+    <section class="work-zone">
+        <div class="school" id="school">
+            <div class="skills thirds">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Nombre de Proyecto</h5></li>
+                    <li class="list-group-item">
+                        <h6>Appix Risk Manager</h6>
+                        <p>Este fue un sitio web seguro con propósito de loggear proyectos y monitorear
+                            sus estados de riesgos a lo largo del tiempo para producir gráficas/indicadores 
+                            de viabilidad en las que las decisiones de los usuarios (el cliente) pudieran 
+                            basarse.
+                        </p>
+                        <ul><li>NodeJS</li><li>Frontend</li><li>Bases de Datos Relacionales</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>NOVUS Simulador Educacional</h6>
+                        <p>Es un simulador en línea desiñado para uso comercial en donde estudiantes 
+                            pueden aprender las complejidades financieras, logísticas, y cualitativas 
+                            de las líneas de producción.
+                        </p>
+                        <ul><li>Modelados Financieros</li><li>Javascript</li><li>Bases de Datos No Relacionales</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-role thirds">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Mi Papel</h5></li>
+                    <li class="list-group-item">
+                        <h6>Desarrollador Web</h6>
+                        <p>Como éramos un equipo de solo dos, ambos teníamos que contribuir en todos aspectos del 
+                            proyecto. Construimos la base de datos, programamos el backend, y desiñamos el frontend
+                            juntos. 
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Desarrollador/Programador</h6>
+                        <p>Estoy actualmente asignado al equipo del modelado financiero donde nuestro trabajo es crear 
+                            y codificar la parte del simulador que maneja los costos e ingresos de las acciones del 
+                            usuario.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects thirds">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Fuente del Proyecto</h5></li>
+                    <li class="list-group-item">
+                        <h6>Repository de Github</h6>
+                        <img src="../images/manual_buscar.png">
+                        <a href="https://github.com/famchiyaque/Risk-Manager-App">github.com/famchiyaque/Risk-Manager-App</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Simulador aún no público</h6>
+                        <img src="../images/novus-logo.png"><br>
+                        <img src="../images/novus.png" style="width: 45%;">
+                        <!-- <a href=""></a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="programming hidden" id="programming">
+            <div class="skills halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Descripción de Actividad</h5></li>
+                    <li class="list-group-item">
+                        <h6>Participante ICPC</h6>
+                        <p>Como parte de un grupo estudiantil, participo y represento mi escuela 
+                            internacionalmente en concursos ICPC (International Collegiate Programming Contest)
+                            en los que competimos por un lugar a nivel nacional. No nos ha salido muy bien 
+                            hasta la fecha pero ahí vamos.
+                        </p>
+                        <ul><li>C++</li><li>Programación Competetiva</li><li>Algoritmos/Estructuras de Datos</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Usuario de CodeWars</h6>
+                        <p>Me gusta practicar mis habilidades de algoritmos y estructuras de datos con CodeWars, 
+                            un sitio tipe LeetCode o CodeForeces. Soy relativamente nuevo pero en poco tiempo he 
+                            resuelto ya varios problemas de todo tipo.
+                        </p>
+                        <ul><li>C++</li><li>Optimización de Código</li><li>Complejidad de Tiempo</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Aprender Más</h5></li>
+                    <li class="list-group-item">
+                        <h6>No hay liga para este </h6>
+                        <img src="../images/icpc.jpg">
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Liga a mi Pérfil de CodeWars</h6>
+                        <img src="https://www.codewars.com/users/famchiyaque/badges/large"><br>
+                        <a href="https://www.codewars.com/users/famchiyaque">mi pérfil de codewars</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="personal hidden" id="personal">
+            <div class="skills halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Descripción de Proyecto</h5></li>
+                    <li class="list-group-item">
+                        <h6>Aplicación React de Tareas</h6>
+                        <p>Esta app combina las capacidades frontend de React con un backend de 
+                            nodejs/express y una base de datos MySQL para crear una experiencia 
+                            amigable para el usuario. Se pueden crear listas de tareas personalizadas 
+                            para la organización y manejo del progreso de sus tareas.
+                        </p>
+                        <ul><li>NodeJS/Express</li><li>React</li><li>MySQL</li><li>Desplieque AWS</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Aplicación React Advisor de Viaje</h6>
+                        <p>Este sitio estático utiliza tu ubicación y varios APIs de Google y RapidAPI 
+                            para producir un mapa interactivo que te muestra las ubicaciones y descripciones de los 
+                            mejores restaurantes cerca de ti incluyendo imágenes y otros indicadores relevantes.
+                        </p>
+                        <ul><li>React</li><li>APIs</li></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Simulador de BlackJack</h6>
+                        <p>Este repo de github contiene varios scripts de python que simulan y/o grafican 
+                            los resultados de muchas manos de blackjack según la estrategia básica. También 
+                            hay algunos para que uno aprende a aprender esta estrategia.
+                        </p>
+                        <ul><li>Python</li><li>Estadística</li><li>Algorítmos</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects halves">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-title"><h5>Aprender Más</h5></li>
+                    <li class="list-group-item">
+                        <h6>Repositorio de Github</h6>
+                        <img src="../images/mern-app.png"><br>
+                        <a class="high-z" href="https://github.com/famchiyaque/MERN-Todo-List-App">github.com/famchiyaque/MERN-Todo-List-App</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Repositorio de Github</h6>
+                        <img src="../images/travel-advisor.png"><br>
+                        <a class="high-z" href="https://github.com/famchiyaque/Travel-Advisor-React-App">github.com/famchiyaque/Travel-Advisor-React-App</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Repositorio de Github</h6>
+                        <img src="../images/blackjack.png"><br>
+                        <a class="high-z" href="https://github.com/famchiyaque/BlackJack-Sims">github.com/famchiyaque/BlackJack-Sims</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="hard-skills">
+        <h2 class="brown-underline">Mis Habilidades Duras</h2>
+        <div class="basic-flex" style="width: 80%; margin: 0 auto;">
+            <div>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>Backend</li>
+                    <li>Desarrollo Web</li>
+                    <li>Full Stack (MERN)</li>
+                    <li>Apps React con APIs</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>C++</li>
+                    <li>Algoritmos/Estructuras de Datos</li>
+                    <li>Python</li>
+                    <li>Estadística</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="this-site">
+        <h2 class="gray-underline">Mi Experiencia al Construir esta Página</h2>
+        <p>Me divertí mucho al crear esta página estática desde cero y me gustó tener la oportunidad 
+            de hablar de mi mismo y demostrar mis habiliades a través de mis various proyectos. Espero 
+            que a la persona leyendo esto le haya gustado (especialmente los reclutadores). 
+            ¡Gracias por visitar!<br><br>
+            El código de este sitio fue totalmente original excepto various elementos/components tomados 
+            de bootstrap. <a href="https://getbootstrap.com">liga a bootstrap</a>
+        </p>
+    </section>
+
+    <div class="brown-lines">
+        <p class="brown-back">.</p><br><br><p class="brown-back">.</p>
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:examplemail@gmail.com" class="footer__link">andrezala03@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/famchiyaque">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.whatsapp.com">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+      </footer>
+
+      <div class="settings">
+        <div class="basic-flex">
+          <button class="button" onclick="changeToEng('portfolio')">ENG</button> | <button class="button" onclick="changeToSpa('portfolio')">SPA</button>
+        </div>
+      </div>
+
+</body>
+<script src="../scripts/portfolio.js"></script>
+<script src="../scripts/main.js"></script>
+</html>

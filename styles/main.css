@@ -273,6 +273,7 @@ img {
     position: absolute;
     opacity: 0;
     display: none;
+    z-index: 1000;
 }
 
 .toast.show {
