@@ -14,6 +14,16 @@ function openSettings() {
 }
 
 window.onload = function() {
+    const profileImg = document.getElementById('profile-img')
+    const profileName = document.querySelector('.profile-name')
+    const profileDesc = document.querySelector('.profile-desc')
+
+    setTimeout(() => {
+        profileImg.classList.add('profile-img-show')
+        profileName.classList.add('profile-show')
+        profileDesc.classList.add('profile-show')
+    }, 500)
+
     const toast = document.querySelector('.toast')
     const gear = document.getElementById('gear')
     const viewportWidth = window.innerWidth
@@ -21,13 +31,25 @@ window.onload = function() {
   
     const targetRect = gear.getBoundingClientRect()
   
-    toast.style.top = `${targetRect.top + 45}px` // Position it relative to the top of the target
-    // toast.style.right = `${targetRect.right - 100}px`
+    toast.style.top = `${targetRect.top + 45}px`
     toast.style.left =  `${targetRect.left - leftPx}px`
-    // toast.style.left = `${targetRect.right + 20}px` // Position it to the right of the target, with some spacing
+
     setTimeout(() => {
         toast.classList.add('show')
-      }, 500)
+      }, 1200)
+
+    const contactBtn = document.getElementById('contact-btn')
+    const experienceBtn = document.getElementById('exper-btn')
+    const resumeBtn = document.getElementById('resume-btn')
+    setTimeout(() => {
+        contactBtn.classList.add('btn-effect')
+    }, 1500)
+    setTimeout(() => {
+        experienceBtn.classList.add('btn-effect')
+    }, 1800)
+    setTimeout(() => {
+        resumeBtn.classList.add('btn-effect')
+    }, 2100)
 }
 
 function closeToast() {

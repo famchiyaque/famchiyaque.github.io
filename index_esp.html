@@ -23,17 +23,17 @@
     </header>
 
     <div class="profile">
-        <img src="./images/profile-pic.jpg">
+        <img src="./images/profile-pic.jpg" id="profile-img">
         <div class="profile-info">
-            <div class="profile-name"><p>Andre Zaldivar Agle</p></div>
+            <div class="profile-name profile-name-effects"><p>Andre Zaldivar Agle</p></div>
             <div class="profile-subtitle"><p>Ingeniero de Software | Estudiante | Desarrollador Web</p></div>
-            <div class="profile-desc"><p>Mi misión es aprender todo lo posible sobre el mundo de las 
+            <div class="profile-desc profile-desc-effects"><p>Mi misión es aprender todo lo posible sobre el mundo de las 
               computadoras y la programación y espero dejar un buen impacto en este mundo.</p></div>
         </div>
     </div>
 
     <div class="links">
-        <button class="exp-btn" onclick="location.href='./views/aboutMe_esp.html#contacts'">
+        <button class="exp-btn" onclick="location.href='./views/aboutMe_esp.html#contacts'" id="contact-btn">
             Mis Contactos
             <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
               <path
@@ -43,7 +43,7 @@
               ></path>
             </svg>
           </button>
-          <button class="exp-btn"  onclick="location.href='./views/portfolio_esp.html'">
+          <button class="exp-btn"  onclick="location.href='./views/portfolio_esp.html'" id="exper-btn">
             Mi Experiencia
             <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
               <path
@@ -53,7 +53,7 @@
               ></path>
             </svg>
           </button>
-          <button class="exp-btn"  onclick="window.open('./docs/my-resume.pdf', '_blank')">
+          <button class="exp-btn"  onclick="window.open('./docs/my-resume.pdf', '_blank')" id="resume-btn">
             Mi CV
             <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
               <path

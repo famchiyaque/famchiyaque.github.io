@@ -149,6 +149,7 @@ img {
     margin-left: auto;
 }
 
+/* add phase in effect to image */
 .profile img {
     border-radius: 0 50% 50% 0;
     border: solid black 2px;
@@ -156,6 +157,12 @@ img {
     float: left;
     position: relative;
     z-index: 2;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+.profile img.profile-img-show {
+    opacity: 1;
 }
 
 .profile-info {
@@ -167,6 +174,7 @@ img {
     z-index: -1;
 }
 
+/* come in from right for name */
 .profile-name {
     width: 85%;
     height: 20%;
@@ -175,6 +183,17 @@ img {
     background-color: darkslategray;
     color: white;
     transform: skew(40deg);
+}
+
+.profile-name-effects {
+    opacity: 0;
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    transform: skew(40deg) translateX(300px);
+}
+
+.profile-name-effects.profile-show, .profile-desc-effects.profile-show {
+    opacity: 1;
+    transform: skew(40deg) translateX(0);
 }
 
 .profile-subtitle {
@@ -187,6 +206,7 @@ img {
     transform: skew(40deg);
 }
 
+/* come in from left for  description*/
 .profile-desc {
     width: 100%;
     background-color: darkslategray;
@@ -196,6 +216,12 @@ img {
     border: solid black 2px;
 }
 
+.profile-desc-effects {
+    opacity: 0;
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    transform: skew(40deg) translateX(-300px);
+}
+
 .links {
     width: 50%;
     display: flex;
@@ -203,6 +229,24 @@ img {
     align-items: center;
     margin: 5rem auto;
 }
+
+@keyframes btnBounce {
+    0% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(-60px);
+    } 100% {
+        transform: translateY(0);
+    }
+}
+
+.btn-effect {
+    animation: btnBounce 1s ease-in-out;
+}
+
+/* #contact-btn, #exper-btn, #resume-btn {
+    animation: btnBounce 1s ease-in-out;
+} */
 
 .footer {
     background: darkslategray;
