@@ -56,10 +56,6 @@ body {
     /* transform: translateX(-50%); */
 }
 
-.sidenav .show {
-    /* transform: translateX(0); */
-}
-
 section {
     width: 100%;
     text-align: center;
@@ -79,6 +75,10 @@ section {
 
 .interests, .about-me, .contacts {
     padding: 2rem 0;
+}
+
+.about-me, .interests {
+    overflow: hidden;
 }
 
 .about-me img {
@@ -130,6 +130,7 @@ section {
 
 .contacts {
     scroll-margin-top: 100px;
+    margin-bottom: 2rem;
 }
 
 .contacts-flex {
@@ -139,14 +140,70 @@ section {
     width: 100%;
 }
 
+.aboutIcon {
+    color: darkslategray;
+    will-change: transform;
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.aboutIcon:hover {
+    color: #16e0bd;
+}
+
+.aboutIcon.scrolled {
+    color: #16e0bd;
+    transform: scale(1.2);
+}
+
 .contacts-list li {
     height: 4rem;
     font-size: 2rem;
 }
 
 .contacts-list li p {
-    padding: 0 6rem 0 0;
+    /* padding: 0 6rem 0 0; */
     margin: 0;
     font-size: 1.5rem;
     height: 100%;
 }
+
+.biz-i {
+    width: 2.9rem;
+    color: darkslategray;
+    transition: color 0.5s ease-in-out;
+}
+
+.biz-i-scrolled {
+    color: #16e0bd;
+}
+
+.biz-i:hover {
+    color: #16e0bd;
+}
+
+.biz-footer {
+    color: #16e0bd;
+    width: 2rem;
+    padding: 0;
+    margin: auto 0;
+}
+
+.biz-footer:hover {
+    color: blue;
+}
+
+.cls-2, .cls-1 {
+    padding: 0;
+}
+
+.path1 {
+    fill: transparent;
+}
+/* 
+.bord {
+    border: solid green 1px;
+}
+
+.bord-2 {
+    border: solid red 1px;
+} */

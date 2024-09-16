@@ -33,3 +33,43 @@ function index() {
         }
     }
 }
+
+let scrolled = false;
+
+document.addEventListener('scroll', function() {
+    if (!scrolled && window.scrollY >= 600) {
+        console.log("entered the function")
+        const pixels = window.innerHeight * 1.3
+        window.scrollTo({
+            top: pixels,      
+            behavior: 'smooth' 
+        })
+        const contactsFlexIcons = document.getElementsByClassName('aboutIcon')
+        console.log(contactsFlexIcons)
+        for (let i = 0; i < contactsFlexIcons.length; i++) {
+            const currIcon = contactsFlexIcons[i]
+            setTimeout(() => {
+                if (currIcon.querySelector('svg')) {
+                    const svg = currIcon.querySelector('svg')
+                    svg.classList.add('biz-i-scrolled')
+                } else {
+                    currIcon.classList.add("scrolled")
+                }
+            }, i * 300)
+        }
+        
+        for (let i = 0; i < contactsFlexIcons.length; i++) {
+            setTimeout(() => {
+                const currIcon = contactsFlexIcons[i]
+                if (currIcon.querySelector('svg')) {
+                    const svg = currIcon.querySelector('svg')
+                    svg.classList.remove('biz-i-scrolled')
+                } else {
+                    currIcon.classList.remove("scrolled")
+                }
+            }, i * 300 + 1000)
+        }
+
+        scrolled = true 
+    }
+})

@@ -302,6 +302,33 @@ img {
     margin-right: auto;
 }
 
+.resumes {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eng-btn, .spa-btn {
+    display: none;
+    transition: transform 1.5s ease-in-out, opacity 0.5s ease-out;
+}
+
+.show-eng {
+    transform: translateX(15vw) translateY(12vh);
+}
+
+.dissolve {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-spa {
+    transform: translateX(15vw) translateY(-12vh);
+}
+
 .settings.show {
     opacity: 1;
     display: block;
@@ -356,6 +383,7 @@ img {
     height: 60%;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 5px;
 }

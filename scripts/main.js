@@ -1,8 +1,9 @@
 function openSettings() {
     const settingsDiv = document.getElementsByClassName('settings')[0]
     const targetRect = document.getElementById('gear').getBoundingClientRect()
+    const currScroll = window.scrollY
 
-    settingsDiv.style.top = `${targetRect.top + 45}px`
+    settingsDiv.style.top = `${targetRect.top + 45 + currScroll}px`
     settingsDiv.style.left = `${targetRect.left - 100}px`
 
     if (settingsDiv.classList.contains('show')) {
@@ -11,50 +12,6 @@ function openSettings() {
         settingsDiv.classList.add('show')
     }
 
-}
-
-window.onload = function() {
-    const profileImg = document.getElementById('profile-img')
-    const profileName = document.querySelector('.profile-name')
-    const profileDesc = document.querySelector('.profile-desc')
-
-    setTimeout(() => {
-        profileImg.classList.add('profile-img-show')
-        profileName.classList.add('profile-show')
-        profileDesc.classList.add('profile-show')
-    }, 500)
-
-    const toast = document.querySelector('.toast')
-    const gear = document.getElementById('gear')
-    const viewportWidth = window.innerWidth
-    const leftPx = viewportWidth * 0.25 - 20
-  
-    const targetRect = gear.getBoundingClientRect()
-  
-    toast.style.top = `${targetRect.top + 45}px`
-    toast.style.left =  `${targetRect.left - leftPx}px`
-
-    setTimeout(() => {
-        toast.classList.add('show')
-      }, 1200)
-
-    const contactBtn = document.getElementById('contact-btn')
-    const experienceBtn = document.getElementById('exper-btn')
-    const resumeBtn = document.getElementById('resume-btn')
-    setTimeout(() => {
-        contactBtn.classList.add('btn-effect')
-    }, 1500)
-    setTimeout(() => {
-        experienceBtn.classList.add('btn-effect')
-    }, 1800)
-    setTimeout(() => {
-        resumeBtn.classList.add('btn-effect')
-    }, 2100)
-}
-
-function closeToast() {
-    const toast = document.querySelector('.toast')
-    toast.classList.remove('show')
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
